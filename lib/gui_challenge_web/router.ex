@@ -19,6 +19,7 @@ defmodule GuiChallengeWeb.Router do
 
     get "/", PageController, :index
     live "/counters", CounterLive.Index
+    live "/converter", ConverterLive.Index
   end
 
 

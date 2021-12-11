@@ -1,0 +1,12 @@
+<h1>Temperature Converter</h1>
+
+
+<form action="#" id="celsius" phx-change="set_celsius">
+    <label for="celsius">Celsius</label>
+    <input type="text" name="celsius" value={@celsius} phx-debounce="1000"/>
+</form>
+
+<form action="#" id="fahrenheit" phx-change="set_fahrenheit">
+    <label for="fahrenheit">Fahrenheit</label>
+    <input type="text" name="fahrenheit" value={@fahrenheit} phx-debounce="1000"/>
+</form>
