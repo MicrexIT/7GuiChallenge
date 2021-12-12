@@ -1,0 +1,29 @@
+<h1>Timer</h1>
+
+<div>
+    <label for="elapsed-time-gauge">Elapsed Time:</label>
+    <meter
+            id="elapsed-time-gauge"
+            min={min()}
+            low={low(@duration)}
+            high={high(@duration)}
+            optimum={optimum(@duration)}
+            value={@elapsed}
+            max={@duration}
+    >
+        <%= @elapsed %>
+    </meter>
+</div>
+
+<div id="elapsed-time">
+    <%= @elapsed %> s
+</div>
+
+<div>
+    <label for="duration-slider">Duration:</label>
+    <input phx-hook="Slider" type="range" id="duration-slider" name="duration-slider" min="0" max="100" step="1">
+</div>
+
+<div>
+    <button phx-click="reset" type="button" id="reset">Reset</button>
+</div>
