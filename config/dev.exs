@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :gui_challenge, GuiChallenge.Repo,
-  username: "user",
-  password: "password",
+  username: "postgres",
+  password: "postgres",
   database: "gui_challenge_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
