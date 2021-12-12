@@ -1,0 +1,20 @@
+<h1>Book Flight</h1>
+
+
+<.form
+let={f}
+for={@changeset}
+id="flight-booker"
+phx-change="validate"
+phx-submit="book"
+>
+    <%= select f, :flight_type, @flight_types, id: "flight-type" %>
+    <%= text_input f, :departure, id: "departure-date", class: date_class(@changeset, :departure) %>
+    <%= error_tag f, :departure %>
+
+    <%= text_input f, :return, id: "return-date", class: date_class(@changeset, :return), disabled: one_way_flight?(@changeset) %>
+    <%= error_tag f, :return %>
+    <%= error_tag f, :date_mismatch %>
+
+    <%= submit "Book", id: "book-flight", disabled: !@changeset.valid? %>
+</.form>
