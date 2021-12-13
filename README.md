@@ -1,6 +1,20 @@
 # GuiChallenge
+A repo with examples of the 7 GUI tasks in LiveView.
 
-To start your Phoenix server:
+What are the 7 GUI tasks?
+Counter
+Temperature converter
+Flight booker
+Timer
+CRUD
+Circle Drawer
+Cells
+For more information see the 7 GUIs Website.
+
+Want to run these examples?
+Make sure you have Erlang, Elixir, and Phoenix installed.
+
+### To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.setup`
